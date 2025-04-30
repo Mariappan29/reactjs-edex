@@ -1,0 +1,30 @@
+.hover-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .hover-underline {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .hover-underline:hover::after {
+    width: 100%;
+  }
+  

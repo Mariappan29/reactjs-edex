@@ -1,0 +1,74 @@
+/* Grid container for products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual product card */
+  .product-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Product details (name and price) */
+  .product-details {
+    margin: 10px 0;
+  }
+  
+  /* Hover actions (hidden by default) */
+  .hover-actions {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product-card:hover .hover-actions {
+    opacity: 1;
+  }
+  
+  /* Add to cart button */
+  .hover-actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hover-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Orders section */
+  .orders {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .order-item {
+    margin: 5px 0;
+  }
